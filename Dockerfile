@@ -47,5 +47,4 @@ RUN apk add --update bash openssl curl sudo screen && \
 	mkdir /var/lib/shellinabox && \
 	chmod +s /bin/su
 
-# Expose the ports for nginx
-EXPOSE 80
+EXPOSE 4200
