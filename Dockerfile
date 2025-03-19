@@ -22,7 +22,7 @@ ENV SIAB_USERCSS="Normal:+/etc/shellinabox/options-enabled/00_White-On-Black.css
 # Add the files
 ADD root /
 
-RUN apk add --update bash openssl curl sudo && \
+RUN apk add --update bash openssl curl sudo screen && \
 	rm -rf /var/cache/apk/* && \
 	adduser -D -H -h /home/shellinabox shellinabox && \
 	mkdir /var/lib/shellinabox && \
